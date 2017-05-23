@@ -78,7 +78,7 @@ class select(object):
                 'speed': item[6], 'save_time': str(item[8])
             } for item in result]
 
-            data = json.dumps(data, indent = 4)
+            data = json.dumps(data, indent=4)
             return data
         except Exception, e:
             logging.exception('select exception msg:%s' % e)
